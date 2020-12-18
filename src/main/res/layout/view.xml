@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/bg_registration">
+  
+    <RelativeLayout
+    android:id="@+id/header"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentTop="true"
+    android:background="#ffcc33"
+    android:gravity="left" >
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:background="#ffb400"
+     />
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_margin="5dp"
+    android:gravity="center_vertical"
+    android:text="ACCIDENT CARE and WOMEN SAFETY"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColor="#4b2e00"
+    android:textSize="15dp" />
+
+<ImageView
+    
+    android:id="@+id/ImageView01"
+    android:layout_width="46.6dp"
+    android:layout_height="42dp"
+    android:layout_centerVertical="true"
+    android:layout_toLeftOf="@+id/textView1"
+    android:background="@drawable/wom_icon"
+    android:gravity="center" />
+
+</RelativeLayout>
+    <TextView android:layout_width="wrap_content" 
+    android:id="@+id/top" 
+    android:textAppearance="?android:attr/textAppearanceLarge" 
+    android:layout_height="wrap_content" 
+    android:text="Users" 
+    android:textSize="30dp"
+    android:layout_marginTop="10dp" 
+    android:layout_gravity="center">
+    </TextView>
+    <TextView android:layout_width="wrap_content" 
+    android:id="@+id/textView1" 
+    android:textAppearance="?android:attr/textAppearanceMedium" 
+    android:layout_height="wrap_content" 
+    android:text="  Select a User inorder to Send SMS"
+     android:textSize="20dp" android:layout_marginTop="5dp">
+    </TextView>
+    <TextView android:layout_width="wrap_content" 
+    android:id="@+id/textView2"
+     android:textAppearance="?android:attr/textAppearanceMedium" 
+     android:layout_height="wrap_content" 
+     android:text="Location" 
+     android:layout_gravity="center"
+     android:textSize="20dp" android:layout_marginTop="5dp">
+     </TextView>
+
+      <ListView
+          android:id="@+id/vendorlistView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" >
+
+    </ListView>
+    
+    <Button android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/backv" android:text="Back" 
+    android:layout_gravity="right" 
+    android:layout_marginTop="320dp"></Button>
+    
+</LinearLayout>

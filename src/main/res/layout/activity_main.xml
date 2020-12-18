@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+  android:background="@drawable/bg_registration" >
+  <RelativeLayout
+    android:id="@+id/header"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentTop="true"
+    android:background="#ffcc33"
+    android:gravity="left" >
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:background="#ffb400"
+     />
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_margin="5dp"
+    android:gravity="center_vertical"
+    android:text="OFFICE EMPLOYEE LOCATION"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColor="#4b2e00"
+    android:textSize="15dp" />
+
+<ImageView
+    android:id="@+id/ImageView01"
+    android:layout_width="46.6dp"
+    android:layout_height="42dp"
+    android:layout_centerVertical="true"
+    android:layout_toLeftOf="@+id/textView1"
+    android:background="@drawable/wom_icon"
+    android:gravity="center" />
+
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/btnstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/women_stop_logo" />
+
+    <Button
+        android:id="@+id/badd"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        
+        android:layout_below="@+id/btnstart"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        
+        android:textColor="#FFFFFF" />
+<!-- <Button
+        android:id="@+id/bview"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/badd"
+        android:layout_marginRight="19dp"
+        android:background="@drawable/button"
+        
+        android:textColor="#FFFFFF" /> -->
+ <Button
+        android:id="@+id/bexit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/badd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/button"
+        android:text="Exit" />
+
+  <TextView
+      android:id="@+id/tv2"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/btnstart"
+      android:layout_alignParentLeft="true"
+      android:textColor="#1e90ff"
+      android:visibility="invisible"
+      android:textSize="20sp" />
+
+  <TextView
+      android:id="@+id/tv"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/textView11"
+      android:visibility="invisible"
+      android:text=""
+      android:textColor="#1e90ff"
+      android:textSize="25sp" />
+
+  <TextView
+      android:id="@+id/tv1"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/btnstart"
+      android:layout_alignParentLeft="true"
+      android:textColor="#ffffff"
+      android:textSize="20sp" />
+
+  <TextView
+      android:id="@+id/textView11"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+
+      android:layout_below="@+id/header"
+     
+      android:text="You will Press the Button then you can find Employee Location mode."
+      android:textColor="#FFFFFF"
+      android:textSize="20dp" />
+
+  <!--  <TextView
+      android:id="@+id/textView4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/bview"
+      android:layout_alignBottom="@+id/bview"
+      android:layout_alignLeft="@+id/bview"
+      android:text="Accident Care"
+      android:textColor="#FFFFFF"
+
+      android:textSize="20dp" />-->
+
+  <TextView
+      android:id="@+id/textView3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/badd"
+      android:layout_alignBottom="@+id/badd"
+      android:layout_alignRight="@+id/badd"
+      android:text="Add Number"
+      android:textColor="#FFFFFF"
+      android:textSize="20dp" />
+
+</RelativeLayout>

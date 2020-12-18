@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/bg_registration"
+  
+  >
+  <RelativeLayout
+    android:id="@+id/header"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentTop="true"
+    android:background="#ffcc33"
+    android:gravity="left" >
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:background="#ffb400"
+     />
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_margin="5dp"
+    android:gravity="center_vertical"
+    android:text="OFFICE EMPLOYEE LOCATION"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColor="#4b2e00"
+    android:textSize="15dp" />
+
+<ImageView
+    android:id="@+id/ImageView01"
+    android:layout_width="46.6dp"
+    android:layout_height="42dp"
+    android:layout_centerVertical="true"
+    android:layout_toLeftOf="@+id/textView1"
+    android:background="@drawable/wom_icon"
+    android:gravity="center" />
+
+</RelativeLayout>
+    <TextView android:layout_width="wrap_content" 
+    android:id="@+id/text" 
+    android:textAppearance="?android:attr/textAppearanceLarge" 
+    android:layout_height="wrap_content" 
+    android:text="Add Phone Numbers Here..." 
+    android:textSize="30dp"
+    android:layout_gravity="center" android:layout_marginTop="25dp">
+    </TextView>
+    <LinearLayout android:layout_height="wrap_content" 
+    android:id="@+id/linearLayout1" 
+    android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="35dp"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20dp" />
+
+        <EditText android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/nfield" 
+        android:layout_weight="1" android:layout_marginLeft="38dp" android:layout_marginTop="30dp">
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content" 
+    android:id="@+id/linearLayout2" 
+    android:layout_width="match_parent">
+        <TextView android:layout_width="wrap_content" 
+        android:id="@+id/mobiletext" 
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:layout_height="wrap_content" 
+        android:text="Mobile No." android:textSize="20dp" android:layout_marginLeft="2dp" android:layout_marginTop="25dp">
+        </TextView>
+        <EditText android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/mfield" 
+        android:layout_weight="1"
+        android:inputType="phone|number"
+       
+             android:maxLength="10"
+         android:layout_marginLeft="5dp" 
+         android:layout_marginTop="25dp"></EditText>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout3" android:layout_width="match_parent">
+        <Button 
+        android:layout_width="120dp" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/submit" 
+        android:text="Add" 
+        android:layout_marginLeft="35dp" 
+        android:layout_marginTop="25dp"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:background="@drawable/button"></Button>
+        <Button android:layout_width="130dp" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/Backa" android:layout_marginTop="25dp" 
+        android:text="Back" 
+        android:layout_marginLeft="20dp"
+        android:textSize="30dp"
+         android:textColor="#000000"
+        android:background="@drawable/button"></Button>
+    </LinearLayout>
+    
+</LinearLayout>
